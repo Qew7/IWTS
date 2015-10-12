@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-get 'api/index'
-root 'api#index'
-namespace :api do
+
+namespace :api, defaults => {:format => 'json'} do
   resources :skills
 end
 
