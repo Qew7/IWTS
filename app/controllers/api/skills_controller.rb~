@@ -6,9 +6,9 @@ class Api::SkillsController < Api::ApiController
   	@skill = Skill.find(params[:id])
 	render json: @skill
   end
- def new
-	@skill = Skill.new
-  end
+ # def new
+  #	@skill = Skill.new
+#  end
   def create
 	@skill = Skill.new(params[:skill])
 	if @skill.save

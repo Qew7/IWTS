@@ -28,7 +28,7 @@ class Api::SkillsController < Api::ApiController
 		render 'show', formats: [:json], handlers: [:jbuilder], status: 200
 		#redirect_to api_skill_path, :notice => "Skill updated"
 	else
-		render json: {error: "Story could not be created."}, status: 422
+		render json: {error: "Skill could not be created."}, status: 422
 	#	render "edit"
 	end
   end
