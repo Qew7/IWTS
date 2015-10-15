@@ -1,1 +1,1 @@
-json.(@skill, :title)
+json.title 

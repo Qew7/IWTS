@@ -1,1 +1,1 @@
-json.title @skill.title
+json.title @skills

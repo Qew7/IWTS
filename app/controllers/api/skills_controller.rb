@@ -4,8 +4,7 @@ class Api::SkillsController < Api::ApiController
   end
 
   def show
-  	#@skill = Skill.find(params[:id])
-	#render json: @skill
+  	@skill = Skill.find(params[:id])
   end
 
  def new
