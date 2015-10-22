@@ -1,0 +1,2 @@
+
+json.title @skill.title
