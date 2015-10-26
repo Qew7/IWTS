@@ -1,5 +1,0 @@
-<h1><%= @skill.title %></h1>
-<small><%= @skill.created_at %></small>
-<p><%= link_to "Edit", edit_api_skill_path(skill) %> | 
-<%= link_to "Delete", skill, :data => {:confirm =>"Are you sure?"}, :method => :delete %>
-</p>
