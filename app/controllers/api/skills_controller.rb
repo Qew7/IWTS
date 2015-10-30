@@ -1,6 +1,6 @@
 class Api::SkillsController < Api::ApiController
   def index
-  	@skills = Skill.all
+    @skills = Skill.all
   end
 
   def show
@@ -12,7 +12,7 @@ class Api::SkillsController < Api::ApiController
  end
 
   def create
-    @book = Skill.new(skill_params)
+    @skill = Skill.new(skill_params)
     @skill.save
   end
 

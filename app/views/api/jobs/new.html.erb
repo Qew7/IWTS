@@ -1,0 +1,11 @@
+<h1>Add a New Job</h1>
+
+<%= form_for @job,:url => { :action => "create" } do |f| %>
+<p>
+<%= f.label :jobtitle %><br />
+<%= f.text_field :jobtitle %>
+</p>
+<p>
+<%= f.submit "ADD NEW JOB" %><br />
+</p>
+<% end %>

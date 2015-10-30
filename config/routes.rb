@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
 namespace :api, :defaults => {:format => 'json'} do
   resources :skills
+  resources :jobs
+  resources :workers
+  resources :moneys
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
