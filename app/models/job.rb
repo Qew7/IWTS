@@ -1,3 +1,4 @@
 class Job < ActiveRecord::Base
-  validates :jobtitle, presence: true
+  belongs_to :workers
+  validates :job_title, presence: true
 end

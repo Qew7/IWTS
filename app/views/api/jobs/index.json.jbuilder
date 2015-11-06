@@ -1,4 +1,4 @@
 json.jobs @jobs do |job|
-json.jobtitle job.jobtitle
+json.job_title job.job_title
 end
 
