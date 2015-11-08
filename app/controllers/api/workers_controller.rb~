@@ -7,9 +7,17 @@ class Api::WorkersController < Api::ApiController
     @work = Work.find(params[:id])
   end
 
+  def new
+    @work = Work.new
+  end
+
   def create
     @work = Work.new(work_params)
     @work.save
+  end
+
+  def edit
+    @work = Work.find(params[:id])
   end
 
   def update
