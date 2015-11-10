@@ -11,16 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151009002059) do
+ActiveRecord::Schema.define(version: 20151110132005) do
 
-  create_table "skills", force: :cascade do |t|
-    t.string   "title"
+  create_table "jobs", force: :cascade do |t|
+    t.string   "job_title"
+    t.integer  "worker_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "jobs", force: :cascade do |t|
-    t.string   "job_title"
+  add_index "jobs", ["worker_id"], name: "index_jobs_on_worker_id"
+
+  create_table "skills", force: :cascade do |t|
+    t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
